@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.a{
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(180deg, var(--desert-sand), var(--burlywood));
+}
+
+.a-left{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.a-right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px 10px var(--brown-sugar);
+}
+
+.a-about{
+    color: var(--coffee);
+}
+
+.a-title{
+    color: var(--brown-sugar);
+    text-align: left;
+    font-size: 48px;
+}
+
+.a-desc{
+    width: 70%;
+    font-size: 20px;
+}
+
+.a-list{
+    align-items: flex-start;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 1px;
+    color: var(--cafe-au-lait);
+}
+
+.a-list-item:nth-child(odd):hover{
+    color: var(--coffee);
+    cursor: pointer;
+}
+
+.a-list-item{
+    padding-left: 16px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+:root {
+    --brown-sugar: rgb(156, 102, 68);
+    --coffee: rgb(127, 85, 57);
+    --cafe-au-lait: rgb(176, 137, 104);
+    --burlywood: rgb(221, 184, 146);
+    --desert-sand: rgb(230, 204, 178);
+    --almond: rgb(237, 224, 212);
+}
+
+@media screen and (max-width: 480px) {
+    .a{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding-top: 900px;
+    }
+
+    .a-right{
+        padding: 50px;
+
+    }
+
+    .a-right-wrapper{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50%;
+    }
+
+    .a-title{
+        text-align: center;
+    }
+
+    .a-desc{
+        display: none;
+    }
+
+    .a-list{
+        margin-right: 10px;
+    }
+
+}
+
