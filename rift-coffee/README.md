@@ -1,4 +1,3 @@
-
 # Rift Coffee
 
 ![Images](design/images/design1.png)
